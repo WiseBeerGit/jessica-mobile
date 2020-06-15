@@ -45,12 +45,10 @@ body {
     /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
     margin: 0 25px;
-
     z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-
     box-sizing: border-box;
 }
 
@@ -93,7 +91,7 @@ body {
     height: 70px;
     margin-bottom: 25px;
     box-sizing: border-box;
-    border: purple 2px solid;
+    /* border: purple 2px solid; */
 }
 
 .menu-btn {
