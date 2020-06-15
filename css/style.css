@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    border: solid yellow 2px;
+
     box-sizing: border-box;
 }
 
@@ -93,7 +93,7 @@ body {
     height: 70px;
     margin-bottom: 25px;
     box-sizing: border-box;
-
+    border: purple 2px solid;
 }
 
 .menu-btn {
