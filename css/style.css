@@ -27,7 +27,7 @@ body {
     line-height: 1;
 }
 
-.layer0 {
+#layer0 {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-    position: relative;
+    position: absolute;
     height: 100%;
     width: 80%;
     top: 0;
@@ -103,10 +103,8 @@ h1::after {
 
 .title-text-top {
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 0;
-    padding-top: 3em;
-    padding: 2em;
     z-index: 3;
     height: 100%;
     width: 100%;
