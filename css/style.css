@@ -144,7 +144,7 @@ p {
     left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
     width: 80%;
     height: 70px;
