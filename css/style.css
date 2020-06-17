@@ -87,7 +87,7 @@ p {
     position: relative;
     height: calc(100% - 100px);
     /* subtract 100px for nav on bottom */
-    width: 567px;
+    width: 560px;
     top: 0;
     left: 0;
     /* Fallback for browsers that do not support Custom Properties */
