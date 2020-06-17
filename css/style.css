@@ -27,6 +27,10 @@ body {
     line-height: 1;
 }
 
+body {
+    background-color: black;
+}
+
 h1 {
     font-size: 0.6em;
     color: white;
@@ -138,7 +142,7 @@ p {
     flex-flow: wrap;
     align-items: flex-end;
     /* justify-content: center; */
-    border: solid pink 2px;
+    /* border: solid pink 2px; */
 }
 
 .men,
