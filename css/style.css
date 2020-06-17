@@ -84,21 +84,24 @@ p {
 }
 
 .container {
-    position: absolute;
-    height: 100%;
-    width: 80%;
+    position: relative;
+    height: calc(100% - 100px);
+    /* subtract 100px for nav on bottom */
+    width: 50%;
     top: 0;
     left: 0;
     /* Fallback for browsers that do not support Custom Properties */
     /* height: calc(var(--vh, 1vh) * 100); */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
     z-index: 2;
+    padding-bottom: 5%;
+
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     box-sizing: border-box;
-    /* border: solid yellow 2px; */
+    border: solid yellow 2px;
 
 
 }
@@ -125,25 +128,20 @@ p {
     height: 100%;
     width: 100%;
     pointer-events: none;
-
 }
 
 
 .title-text-top {
     position: absolute;
-    top: -10%;
+    top: 0;
     left: 0;
     z-index: 3;
-    height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 5%;
     pointer-events: none;
     /* border: dashed green 2px; */
     box-sizing: border-box;
-
+    pointer-events: none;
 }
 
 .title-content {
@@ -155,7 +153,6 @@ p {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 100px;
     z-index: 4;
     width: 100%;
     display: flex;
@@ -211,20 +208,29 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    width: 80%;
+
+    width: 50%;
     height: 70px;
     bottom: 0;
     box-sizing: border-box;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 25%;
+    margin-left: 25%;
     margin-bottom: 2%;
     /* border: purple 2px solid; */
 }
 
-.menu-btn {
+/* container to give the button an outside border */
+.menu-btn-outside {
     width: 60px;
     height: 60px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: var(--border-radius);
+}
+
+.menu-btn {
+    width: 100%;
+    height: 100%;
     text-align: center;
     background-color: saddlebrown;
     border: 3px solid sandybrown;
@@ -237,11 +243,6 @@ p {
 
 }
 
-.menu-btn-outside {
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: var(--border-radius);
-}
 
 i {
     padding-bottom: 8px;
