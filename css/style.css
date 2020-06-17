@@ -89,7 +89,7 @@ p {
 
 .container {
     position: relative;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     /* subtract 100px for nav on bottom */
     width: 360px;
     top: 0;
@@ -99,11 +99,9 @@ p {
     z-index: 2;
     padding-bottom: 5%;
     box-sizing: border-box;
-    /* border: solid yellow 1px; */
+    border: solid yellow 1px;
 
 }
-
-
 
 .title-text {
     /* display: flex;
@@ -122,7 +120,7 @@ p {
 .title-text-top {
     width: 100%;
     margin-top: 5%;
-    padding: 5px;
+    padding: 10px;
     pointer-events: none;
     /* border: dashed green 2px; */
     box-sizing: border-box;
@@ -142,7 +140,7 @@ p {
     flex-flow: wrap;
     align-items: flex-end;
     /* justify-content: center; */
-    /* border: solid pink 2px; */
+    border: solid pink 2px;
 }
 
 .men,
@@ -198,7 +196,7 @@ nav {
     align-items: center;
     width: 80%;
     height: 70px;
-    bottom: 0;
+
     box-sizing: border-box;
     margin-right: 10%;
     margin-left: 10%;
