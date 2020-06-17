@@ -95,7 +95,7 @@ p {
     z-index: 2;
     padding-bottom: 5%;
     box-sizing: border-box;
-    border: solid yellow 1px;
+    /* border: solid yellow 1px; */
 
 }
 
