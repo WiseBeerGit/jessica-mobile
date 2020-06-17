@@ -131,7 +131,7 @@ p {
     flex-flow: wrap;
     align-items: flex-end;
     /* justify-content: center; */
-    border: solid pink 2px;
+    /* border: solid pink 2px; */
 }
 
 .men,
