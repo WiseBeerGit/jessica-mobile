@@ -88,8 +88,12 @@ p {
 }
 
 .container {
+    display: flex;
     position: relative;
-    height: calc(100vh - 100px);
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
     /* subtract 100px for nav on bottom */
     width: 360px;
     top: 0;
@@ -104,10 +108,6 @@ p {
 }
 
 .title-text {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     z-index: 3;
     height: 100%;
     width: 100%;
@@ -118,6 +118,7 @@ p {
 
 
 .title-text-top {
+    z-index: 3;
     width: 100%;
     margin-top: 5%;
     padding: 10px;
@@ -129,8 +130,7 @@ p {
 
 
 .man-woman-select {
-    position: absolute;
-    bottom: 0;
+
     box-sizing: border-box;
     z-index: 4;
     width: 100%;
@@ -185,23 +185,23 @@ p {
 }
 
 /* nav bar */
+.nav {
+    justify-self: flex-end;
+
+}
 
 nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 70px;
 
     box-sizing: border-box;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 2%;
-    /* border: purple 2px solid; */
+
+    border: purple 2px solid;
 }
 
 /* container to give the button an outside border */
