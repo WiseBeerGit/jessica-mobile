@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-* {
-    box-sizing: border-box;
-}
 
 h1,
 h2,
@@ -40,10 +37,6 @@ h1 {
 
 }
 
-h1::after {
-    content: "";
-
-}
 
 p {
     color: white;
@@ -62,14 +55,7 @@ p {
 
 }
 
-.div-statusbar {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1em;
-}
+
 
 
 #layer0 {
@@ -88,23 +74,31 @@ p {
 }
 
 .container {
-    display: flex;
     position: relative;
+    display: flex;
+
     flex-direction: column;
     justify-content: space-between;
-
-    height: 100vh;
+    height: 90vh;
     /* subtract 100px for nav on bottom */
-    width: 360px;
-    top: 0;
-    left: 0;
+    width: 320px;
+
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
-    padding-bottom: 5%;
+
     box-sizing: border-box;
     border: solid yellow 1px;
 
+}
+
+.div-statusbar {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
 }
 
 .title-text {
@@ -130,7 +124,6 @@ p {
 
 
 .man-woman-select {
-
     box-sizing: border-box;
     z-index: 4;
     width: 100%;
@@ -185,29 +178,24 @@ p {
 }
 
 /* nav bar */
-.nav {
-    justify-self: flex-end;
 
-}
 
 nav {
-
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 70px;
-
     box-sizing: border-box;
-
     border: purple 2px solid;
 }
 
 /* container to give the button an outside border */
 .menu-btn-outside {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border: 2px solid black;
     border-radius: var(--border-radius);
     box-sizing: border-box;
@@ -221,7 +209,7 @@ nav {
     border: 3px solid sandybrown;
     border-radius: var(--border-radius);
     font-size: 0.4rem;
-
+    box-sizing: border-box;
     padding: 1px;
     padding-top: 8px;
     padding-bottom: 2px;
